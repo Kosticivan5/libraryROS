@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* main colors */
+:root {
+  --red: #e40038;
+  --blue: #00234d;
+  --grey: #edf0f5;
+  --shadow: 0px 8px 24px rgba(50, 4, 36, 0.1);
+  --white: #fff;
+  --black: #000;
+}
+
+/* banner */
+
+.banner {
+  max-width: 1280px;
+  height: 240px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  place-content: center;
+  position: relative;
+}
+
+.banner .banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.banner .logo {
+  width: 50px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.banner > h1 {
+  color: var(--white);
+  font-size: 2rem;
+  font-weight: 600;
+}
+/* banner info  */
+
+.banner-info {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+  padding: 1.5rem 0.5rem 2.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.banner-title {
+  text-align: center;
+  color: var(--blue);
+  font-size: 1.6rem;
+}
+
+.banner-title > span {
+  color: var(--red);
+}
+.banner-title > img {
+  width: 120px;
+}
+
+.banner-text {
+  width: 700px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: left;
+}
+.banner-text span {
+  font-weight: 600;
+}
+.banner-text a {
+  text-decoration: none;
+  color: var(--red);
+}
+/* nav */
+
+.library-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.25rem 0.5rem 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 80px;
+  padding: 14px 16px;
+  border-radius: 12px;
+  background: var(--grey);
+  color: var(--black);
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.active {
+  background: var(--blue);
+  color: var(--white);
+}
+.content-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+}
+
+/* rules and registration */
+
+.rules,
+.registration {
+  width: 780px;
+  display: grid;
+  align-items: start;
+  grid-template-columns: 2rem 1fr;
+  grid-row-gap: 0.5rem;
+  position: relative;
+}
+
+.rules > p,
+.registration > p {
+  font-weight: 500;
+  line-height: 1.5rem;
+  color: var(--blue);
+  font-weight: 500;
+}
+
+.rules > svg {
+  color: var(--red);
+  margin-top: 4px;
+}
+
+.registration svg {
+  color: var(--red);
+  font-size: 1.3rem;
+  margin-top: 2px;
+}
+
+.rules a,
+.registration a {
+  color: var(--red);
+}
+
+.qr-code {
+  width: 150px;
+  display: block;
+  margin: 1rem auto;
+}
+
+/* Q & A */
+
+.question-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin: 1.5rem 0;
+}
+
+.question {
+  border: 0;
+  outline: none;
+  background-color: var(--grey);
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  width: 700px;
+  cursor: pointer;
+  font-weight: 500;
+  letter-spacing: 0.32px;
+  font-size: 0.875rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  transition: all 0.5s ease;
+}
+
+.question-section ul {
+  background-color: var(--grey);
+  list-style: none;
+  border-radius: 0.75rem;
+  width: 700px;
+  cursor: pointer;
+  font-weight: 500;
+  letter-spacing: 0.32px;
+  font-size: 0.875rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  box-shadow: var(--shadow);
+  margin-top: 0.5rem;
+}
+.question-section li {
+  background-color: var(--white);
+  padding: 0.75rem 1rem;
+}
+.question-section li:first-child {
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
+}
+.question-section li:last-child {
+  border-bottom-left-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
+}
+
+.question-section svg {
+  color: var(--blue);
+  font-size: 1.3rem;
+  margin-top: 2px;
+}
+
+/* scrollbar styling */
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #e9ecf1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #bec0cd;
+  border-radius: 10px;
+}
+
+/* popular books */
+
+.popular {
+  display: grid;
+  grid-template-columns: repeat(5, 120px);
+  grid-template-rows: repeat(2, 180px);
+  gap: 1rem;
+}
+
+.book-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
