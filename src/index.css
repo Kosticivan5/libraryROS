@@ -15,6 +15,8 @@
   --shadow: 0px 8px 24px rgba(50, 4, 36, 0.1);
   --white: #fff;
   --black: #000;
+  --max_width: 757px;
+  --margin_center: 0 auto;
 }
 
 /* banner */
@@ -23,7 +25,7 @@
   max-width: 1280px;
   height: 240px;
   width: 100%;
-  margin: 0 auto;
+  margin: var(--margin_center);
   display: grid;
   place-content: center;
   position: relative;
@@ -38,14 +40,14 @@
   left: 0;
   z-index: -1;
 }
-.banner .logo {
-  width: 50px;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-}
 
-.banner > h1 {
+.banner > .banner-title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.banner h1 {
   color: var(--white);
   font-size: 2rem;
   font-weight: 600;
@@ -53,54 +55,59 @@
 /* banner info  */
 
 .banner-info {
-  max-width: 1200px;
+  max-width: var(--max_width);
   margin: 0 auto;
   margin-top: 1.5rem;
-  padding: 1.5rem 0.5rem 2.75rem;
+  padding: 1.5rem 0.5rem 3rem;
   display: flex;
   flex-direction: column;
+  /* align-items: center; */
   gap: 2rem;
 }
 
 .banner-title {
-  text-align: center;
   color: var(--blue);
-  font-size: 1.6rem;
-}
-
-.banner-title > span {
-  color: var(--red);
-}
-.banner-title > img {
-  width: 120px;
+  font-size: 1.9rem;
 }
 
 .banner-text {
-  width: 700px;
-  margin: 0 auto;
+  width: 675px;
+  /* margin: var(--margin_center); */
   display: flex;
-  justify-content: flex-start;
+  /* justify-content: flex-start; */
   flex-direction: column;
   gap: 1rem;
   text-align: left;
 }
-.banner-text span {
-  font-weight: 600;
+.banner-text h3 {
+  line-height: 1.5rem;
+  color: var(--blue);
 }
-.banner-text a {
-  text-decoration: none;
-  color: var(--red);
+.banner-text p {
+  line-height: 1.25rem;
+}
+/* content  */
+.content-container {
+  width: var(--max_width);
+  min-height: 100vh;
+  margin: var(--margin_center);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-bottom: 3rem;
+  /* justify-content: center; */
+  /* padding: 0 2.7rem 0 1.5rem; */
 }
 /* nav */
 
 .library-nav {
   display: flex;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   gap: 0.75rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1.25rem 0.5rem 0;
+  width: var(--max_width);
+  /* padding: 0 2.8rem; */
+  margin: var(--margin_center);
 }
 
 .nav-link {
@@ -109,9 +116,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 200px;
-  height: 80px;
-  padding: 14px 16px;
+  /* width: 200px;
+  height: 80px; */
+  padding: 10px 16px;
   border-radius: 12px;
   background: var(--grey);
   color: var(--black);
@@ -124,15 +131,54 @@
   background: var(--blue);
   color: var(--white);
 }
-.content-container {
-  max-width: 1200px;
-  margin: 0 auto;
+
+/* warning */
+
+.warning {
+  width: 100%;
+  border: 1px solid red;
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
   display: flex;
-  justify-content: center;
-  padding: 3rem;
+  align-items: center;
+  gap: 1rem;
+  background: rgb(246, 222, 228);
+  background: linear-gradient(
+    7deg,
+    rgba(246, 222, 228, 0.27641099855282203) 43%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  margin-bottom: 2.25rem;
+}
+
+.warning > p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.warning > svg {
+  color: var(--red);
+  font-size: 3rem;
 }
 
 /* rules and registration */
+
+.rules-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.rules-container article {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.rules-container h3 {
+  color: var(--blue);
+  padding-bottom: 1.5rem;
+}
 
 .rules,
 .registration {
@@ -144,12 +190,16 @@
   position: relative;
 }
 
-.rules > p,
+.rules h4 {
+  color: var(--red);
+  padding-bottom: 0.5rem;
+}
+
+.rules p,
 .registration > p {
-  font-weight: 500;
   line-height: 1.5rem;
   color: var(--blue);
-  font-weight: 500;
+  padding-bottom: 0.5rem;
 }
 
 .rules > svg {
@@ -166,6 +216,13 @@
 .rules a,
 .registration a {
   color: var(--red);
+}
+
+.rules ul {
+  list-style: none;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.7);
+  line-height: 1.5rem;
 }
 
 .qr-code {
@@ -219,6 +276,7 @@
 .question-section li {
   background-color: var(--white);
   padding: 0.75rem 1rem;
+  line-height: 1.5rem;
 }
 .question-section li:first-child {
   border-top-left-radius: 0.75rem;

@@ -6,8 +6,8 @@ const SharedLayout = () => {
   return (
     <>
       <Banner />
-      <LibraryNav />
       <main className="content-container">
+        <LibraryNav />
         <Outlet />
       </main>
     </>

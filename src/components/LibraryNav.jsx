@@ -9,7 +9,7 @@ const LibraryNav = () => {
         }
         to={`/`}
       >
-        Правила пользования библиотекой
+        Правила пользования
       </NavLink>
       <NavLink
         className={({ isActive }) =>
@@ -17,7 +17,7 @@ const LibraryNav = () => {
         }
         to="/registration"
       >
-        Регистрация <br /> в библиотеке
+        Регистрация
       </NavLink>
       <NavLink
         className={({ isActive }) =>
@@ -25,7 +25,7 @@ const LibraryNav = () => {
         }
         to="/q&a"
       >
-        Часто задаваемые вопросы
+        FAQ
       </NavLink>
       <NavLink
         className={({ isActive }) =>
@@ -33,7 +33,7 @@ const LibraryNav = () => {
         }
         to="/popular"
       >
-        Топ-10 читаемых книг
+        Что нынче читают?
       </NavLink>
     </nav>
   );

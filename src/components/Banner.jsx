@@ -1,35 +1,29 @@
 import img from "../assets/libraryBanner.jpg";
-import logo from "../assets/logo.svg";
-import mybooklogo from "../assets/mybooklogo.svg";
+import mybooklogo from "../assets/banner_logo.png";
 
 const Banner = () => {
   return (
     <>
       <div className="banner">
-        {/* <img className="logo" src={logo} alt="logo" /> */}
         <img className="banner-img" src={img} alt="banner-img" />
-        <h1>Библиотека</h1>
+        <div className="banner-title-container" title>
+          <h1>Библиотека</h1>
+          <img src={mybooklogo} alt="mybook" />
+        </div>
       </div>
       <div className="banner-info">
         <h2 className="banner-title">
-          Добро пожаловать на страницу корпоративной библиотеки <span>Рос</span>
-          банка от <br /> <img src={mybooklogo} alt="mybook" />
+          Добро пожаловать в библиотеку Росбанка!
         </h2>
         <div className="banner-text">
+          <h3>
+            Здесь можно громко разговаривать&#128522; <br /> Но есть свои
+            правила.
+          </h3>
           <p>
-            Здесь можно громко разговаривать :-) но есть свои правила. При входе
-            в библиотеку обязательно прочтите их{" "}
-            <span>(см.первый инфоблок ниже)</span>, это поможет нам эффективно
-            управлять ограниченным количеством учетных записей, а вам
-            поддерживать вашу мотивацию к чтению.
-          </p>
-          <p>
-            Если вы не найдете на этой странице ответ на свой вопрос, приходите
-            на ящик <br />
-            <a href="mailto: e-learning@rosbank.ru" target="_blank">
-              e-learning@rosbank.ru
-            </a>{" "}
-            вам помогут!
+            При входе в библиотеку обязательно прочтите правила ниже, это
+            поможет нам эффективно управлять ограниченным количеством учетных
+            записей, а вам поддерживать вашу мотивацию к чтению.
           </p>
         </div>
       </div>
