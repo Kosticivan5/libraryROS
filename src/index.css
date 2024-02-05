@@ -101,6 +101,7 @@
   gap: 0.75rem;
   width: var(--max_width);
   margin: var(--margin_center);
+  margin-bottom: 1rem;
 }
 
 .nav-link {
@@ -139,7 +140,7 @@
     rgba(246, 222, 228, 0.27641099855282203) 43%,
     rgba(255, 255, 255, 1) 100%
   );
-  margin-bottom: 2.25rem;
+  margin-top: 1.25rem;
 }
 
 .warning > p {
@@ -217,7 +218,7 @@
 }
 
 .qr-code {
-  width: 150px;
+  /* width: 150px; */
   display: block;
   margin: 1rem auto;
 }

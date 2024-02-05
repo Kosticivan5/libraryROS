@@ -26,7 +26,9 @@ const QandA = () => {
             <ul>
               {answers[index].map((item, i) => (
                 <li key={i}>
-                  {item.type === "text" && <p>{item.content}</p>}
+                  {item.type === "text" && (
+                    <div dangerouslySetInnerHTML={{ __html: item.content }} />
+                  )}
                   {item.type === "image" && (
                     <img
                       className="qr-code"

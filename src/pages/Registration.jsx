@@ -41,7 +41,7 @@ const Registration = () => {
         <p>
           Как только появилась своя учетная запись в библиотеке, можно читать
           или слушать книги на любом устройстве, скачав приложение через Google
-          Play или по QR-коду:
+          Play / AppStore. QR-коды для скачивания:
         </p>
       </div>
       <img className="qr-code" src={qr} alt="qr_registration" />

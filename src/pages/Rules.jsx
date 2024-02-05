@@ -4,13 +4,6 @@ import { CiWarning } from "react-icons/ci";
 const Rules = () => {
   return (
     <section>
-      <div className="warning">
-        <CiWarning />
-        <p>
-          Департамент корпоративного обучения оставляет за собой право <br />{" "}
-          принятии решения в предоставлении и аннулировании УЗ пользователя.
-        </p>
-      </div>
       <div className="rules-container">
         {/* rules */}
         <article>
@@ -89,6 +82,13 @@ const Rules = () => {
             </div>
           </div>
         </article>
+      </div>
+      <div className="warning">
+        <CiWarning />
+        <p>
+          Департамент корпоративного обучения оставляет за собой право <br />{" "}
+          принятии решения в предоставлении и аннулировании УЗ пользователя.
+        </p>
       </div>
     </section>
   );
