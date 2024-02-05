@@ -10,16 +10,13 @@ const router = createHashRouter([
   {
     path: "/",
     element: <SharedLayout />,
+    errorElement: <Error />,
     children: [
       { index: true, element: <Rules /> },
       { path: "registration", element: <Registration /> },
       { path: "q&a", element: <QandA /> },
       { path: "popular", element: <Popular /> },
     ],
-  },
-  {
-    path: "*",
-    element: <Error />,
   },
 ]);
 
