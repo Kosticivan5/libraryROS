@@ -113,11 +113,15 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 0.75rem;
+  justify-items: left;
 }
 
 .qr-container p {
   font-size: 10px;
   font-weight: 600;
+}
+.qr {
+  transform: translateX(-3px);
 }
 
 /* content  */
@@ -377,6 +381,6 @@
   text-decoration: none;
   color: var(--white);
   background-color: var(--red);
-  padding: 0.5rem 1rem;
+  padding: 0.9rem 1.5rem;
   border-radius: 8px;
 }
