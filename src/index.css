@@ -121,7 +121,10 @@
   font-weight: 600;
 }
 .qr {
-  transform: translateX(-3px);
+  transform: translateX(-2px);
+}
+.qr.android {
+  transform: translateX(-4px);
 }
 
 /* content  */

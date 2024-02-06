@@ -42,8 +42,8 @@ const Banner = () => {
             <div className="qr-container">
               <p>Android</p>
               <p>iOS</p>
-              <img src={qr_android} alt="android" className="qr" />
-              <img src={qr_iOS} alt="iOS" className="qr" />
+              <img src={qr_android} alt="android" className="qr android" />
+              <img src={qr_iOS} alt="iOS" className="qr iOS" />
             </div>
           </article>
         </div>
