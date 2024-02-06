@@ -1,5 +1,7 @@
 import img from "../assets/libraryBanner.jpg";
 import mybooklogo from "../assets/banner_logo.png";
+import qr_android from "../assets/qr_android.svg";
+import qr_iOS from "../assets/qr_iOS.svg";
 
 const Banner = () => {
   return (
@@ -11,7 +13,8 @@ const Banner = () => {
           <img src={mybooklogo} alt="mybook" />
         </div>
       </div>
-      <div className="banner-info">
+      {/* main info */}
+      <article className="banner-info">
         <h2 className="banner-title">
           Добро пожаловать в библиотеку Росбанка!
         </h2>
@@ -26,7 +29,25 @@ const Banner = () => {
             записей, а вам поддерживать вашу мотивацию к чтению.
           </p>
         </div>
-      </div>
+        {/* quick nav */}
+        <div className="quick-nav">
+          <article className="read-nav">
+            <p>Приходите в библиотеку через вэбверсию</p>
+            <a href="https://rosbank.mybook.ru/" target="_blank">
+              Хочу уже читать!
+            </a>
+          </article>
+          <article className="download-nav">
+            <p>Или через приложение, предварительно скачав его по QR-коду:</p>
+            <div className="qr-container">
+              <p>Android</p>
+              <p>iOS</p>
+              <img src={qr_android} alt="android" className="qr" />
+              <img src={qr_iOS} alt="iOS" className="qr" />
+            </div>
+          </article>
+        </div>
+      </article>
     </>
   );
 };

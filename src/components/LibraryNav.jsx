@@ -23,17 +23,17 @@ const LibraryNav = () => {
         className={({ isActive }) =>
           isActive ? "nav-link active" : "nav-link"
         }
-        to="/q&a"
+        to="/popular"
       >
-        FAQ
+        Что нынче читают?
       </NavLink>
       <NavLink
         className={({ isActive }) =>
           isActive ? "nav-link active" : "nav-link"
         }
-        to="/popular"
+        to="/q&a"
       >
-        Что нынче читают?
+        FAQ
       </NavLink>
     </nav>
   );
