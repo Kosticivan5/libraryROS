@@ -8,7 +8,7 @@ const Banner = () => {
     <>
       <div className="banner">
         <img className="banner-img" src={img} alt="banner-img" />
-        <div className="banner-title-container" title>
+        <div className="banner-title-container">
           <h1>Библиотека</h1>
           <img src={mybooklogo} alt="mybook" />
         </div>
@@ -33,7 +33,11 @@ const Banner = () => {
         <div className="quick-nav">
           <article className="read-nav">
             <p>Приходите в библиотеку через вэбверсию</p>
-            <a href="https://rosbank.mybook.ru/" target="_blank">
+            <a
+              href="https://rosbank.mybook.ru/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Хочу уже читать!
             </a>
           </article>

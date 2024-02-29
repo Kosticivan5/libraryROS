@@ -15,7 +15,11 @@ const Registration = () => {
         <GiArchiveRegister />
         <p>
           Чтобы зарегистироваться, надо перейти по{" "}
-          <a href="https://rosbank.mybook.ru/account/landing/" target="_blank">
+          <a
+            href="https://rosbank.mybook.ru/account/landing/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             ссылке
           </a>{" "}
           и указать свой корпоративный электронный адрес.
