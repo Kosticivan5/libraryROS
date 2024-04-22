@@ -22,7 +22,6 @@
 /* banner */
 
 .banner {
-  max-width: 1280px;
   height: 240px;
   width: 100%;
   margin: var(--margin_center);
